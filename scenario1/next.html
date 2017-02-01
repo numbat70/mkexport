@@ -137,7 +137,7 @@
     <script>
       $('#button_events').on('click', function(e){
         e.preventDefault();
-        var address = $(this).attr('href') + '&q=' +$('#search_events').val();
+        var address = $(this).attr('href') + '?q=' +$('#search_events').val();
         window.location = address;
       });
       
