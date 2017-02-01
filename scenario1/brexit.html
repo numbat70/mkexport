@@ -64,8 +64,17 @@
               <h2>BREXIT</h2>
               <h4>Sign Up for Brexit Alerts </h4>
               <p>Baffled by what Brexit means for your business? Register for our regular updates and we'll email you our latest Brexit news as it happens.</p>
-               <div><input type="text" class="form-control" id="brexit_email" placeholder="Email Address..."></div> 
-               <div><input type="text" class="form-control" id="brexit_name" placeholder="Email Address..."></div> 
+
+               <div class="form-group">
+                    <label for="brexitemail">Email:</label>
+                    <input type="email" pattern="[^ @]*@[^ @]*" class="form-control" id="brexitemail">
+               </div>
+               <div class="form-group">
+                   <label for="brexitname">Full Name:</label>
+                   <input type="password" class="form-control" id="brexitname">
+               </div>
+               
+               
               <p><a class="btn btn-default" href="" role="button">Sign Up</a></p>
               </div>
 
