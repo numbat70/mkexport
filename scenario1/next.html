@@ -74,6 +74,13 @@
           <input type="text" class="form-control" id="search_events"  placeholder="Search events for...">
           <br>
           <p><a class="btn btn-success" href="https://www.scottish-enterprise.com/events" role="button"  target="_blank" id="button_events">Search workshops and events &raquo;</a></p>
+      
+           <!-- <p><a class="btn btn-success" href="https://www.scottish-enterprise.com/events" role="button"  target="_blank" id="button_events">Search workshops and events &raquo;</a></p> -->
+          
+          
+          
+          
+          
        </div>
       </div>
       
@@ -138,7 +145,7 @@
     <script>
       $('#button_events').on('click', function(e){
         e.preventDefault();
-        var address = $(this).attr('href') + '?q=' +$('#search_events').val();
+        var address = $(this).attr('href') + '?q=' +$('#search_events').val() + '#f:KHServiceTypeFacet=[Do%20business%20outside%20Scotland]';
         window.location = address;
       });
       
