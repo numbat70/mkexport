@@ -145,7 +145,7 @@
     <script>
       $('#button_events').on('click', function(e){
         e.preventDefault();
-        var address = $(this).attr('href') + '#q=' +$('#search_events').val() + '&#f:KHServiceTypeFacet=[Do%20business%20outside%20Scotland]';
+        var address = $(this).attr('href') + '#q=' +$('#search_events').val() + '&f:KHServiceTypeFacet=[Do%20business%20outside%20Scotland]';
         window.location = address;
       });
       
