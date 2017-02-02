@@ -170,10 +170,12 @@
     	<script>
       		$('#loption1').on('click', function(e){
 			localStorage.setItem("product", "I sell Products");
+			document.getElementById("product").innerHTML = localStorage.product;
       		});
 		
 		$('#loption2').on('click', function(e){
 			localStorage.setItem("product", "I sell Services");
+			document.getElementById("product").innerHTML = localStorage.product;
       		});
 		
 	  </script>
