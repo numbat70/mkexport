@@ -70,13 +70,6 @@
       </div>
     <div class="container" class="panel">
       <div><h2>What we know so far</h2></div>
-      <div id="advice"></div>
-      <div id="networking"></div> 
-      <div id="customers"></div> 
-      <div id="skills"></div> 
-      <div id="events"></div> 
-      <div id="funding"></div>
-      <hr>
       <script>
     		        if (localStorage.advice) { document.write(localStorage.advice);} 
                 if (localStorage.networking) { document.write(localStorage.networking);} 
@@ -90,52 +83,6 @@
       
     
       
-      <script>
-      if (localStorage.advice) {
-          document.getElementById("advice").innerHTML = localStorage.advice;
-      } else {
-         document.getElementById("advice").innerHTML = "No Advice";
-      }  
-      
-        
-      if (localStorage.networking) {
-          document.getElementById("networking").innerHTML = localStorage.networking;
-      } else {
-         document.getElementById("networking").innerHTML = "No Networking";
-      }   
-       
-        
-                
-      if (localStorage.customers) {
-          document.getElementById("customers").innerHTML = localStorage.customers;
-      } else {
-         document.getElementById("customers").innerHTML = "No customers";
-      }  
-        
-                        
-      if (localStorage.skills) {
-          document.getElementById("skills").innerHTML = localStorage.skills;
-      } else {
-         document.getElementById("skills").innerHTML = "No skills";
-      }  
-        
-                        
-      if (localStorage.events) {
-          document.getElementById("events").innerHTML = localStorage.events;
-      } else {
-         document.getElementById("events").innerHTML = "No events";
-      }  
-        
-                        
-      if (localStorage.funding) {
-          document.getElementById("funding").innerHTML = localStorage.funding;
-      } else {
-         document.getElementById("funding").innerHTML = "No funding";
-      }  
-        
-
-        
-      </script>
       
     <!-- <img src="images/home-page-fake.png" style="width:100%;opacity:0.5">-->
     </div>
