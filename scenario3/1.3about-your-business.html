@@ -67,28 +67,28 @@
 	<section class="about-business">
   	      <p><strong>Which industries do you trade in?</strong></p>
 		<div class="btn-group" data-toggle="buttons">
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption1">
 		      <input type="radio" name="options" id="industryOption1"> Aerospace, defence and marine
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption2">
 		      <input type="radio" name="options" id="industryOption2"> Chemical sciences
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption3">
 		      <input type="radio" name="options" id="industryOption3"> Creative industries
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption4">
 		      <input type="radio" name="options" id="industryOption4"> Financial services
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption5">
 		      <input type="radio" name="options" id="industryOption5"> Food and drink
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption6">
 		      <input type="radio" name="options" id="industryOption6"> Life sciences
 		    </label>
-		    <label class="btn btn-default industry">
+		    <label class="btn btn-default industry" id="lindustryOption7">
 		      <input type="radio" name="options" id="industryOption7"> Manufacturing
 		    </label>
-		    <label class="btn btn-default" id="other">
+		    <label class="btn btn-default" id="other" id="lother">
 		      <input type="radio" name="other"> Other
 		    </label>
 		  </div>
@@ -107,14 +107,14 @@
 
 	      <p><strong>Do you have any previous experience of selling overseas?</strong></p>
 	  <div class="btn-group" data-toggle="buttons">
-	    <label class="btn btn-default">
-	      <input type="radio" name="options" id="option1"> None
+	    <label class="btn btn-default" id="lexpoption1">
+	      <input type="radio" name="options" id="expoption1"> None
 	    </label>
-	    <label class="btn btn-default">
-	      <input type="radio" name="options" id="option2"> Some
+	    <label class="btn btn-default" id="lexpoption2">
+	      <input type="radio" name="options" id="expoption2"> Some
 	    </label>
-	    <label class="btn btn-default">
-	      <input type="radio" name="options" id="option3"> Lots
+	    <label class="btn btn-default" id="lexpoption3">
+	      <input type="radio" name="options" id="expoption3"> Lots
 	    </label>
 	  </div>
 
@@ -180,6 +180,23 @@
 		
 	  </script>
 	  
+	      	<script>
+      		$('#lexpoption1').on('click', function(e){
+			localStorage.setItem("experience", "I have no export experience");
+			document.getElementById("experience").innerHTML = localStorage.experience;
+      		});
+		
+		$('#lexpoption2').on('click', function(e){
+			localStorage.setItem("experience", "I have some export experience");
+			document.getElementById("experience").innerHTML = localStorage.experience;
+      		});
+		
+		$('#lexpoption3').on('click', function(e){
+			localStorage.setItem("experience", "I have lots of export experience");
+			document.getElementById("experience").innerHTML = localStorage.experience;
+      		});
+		
+	  </script>
 	  
     </body>
 </html>
