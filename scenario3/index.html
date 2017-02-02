@@ -120,7 +120,12 @@
 			
 	</ul>
 			  
-       
+       if (typeof(Storage) !== "undefined") {
+    		// Code for localStorage/sessionStorage.
+		 <h2>:-)</h2>
+	} else {
+   		<h1>Sorry! No Web Storage support..</h1>
+	}
       </section>
      </div><!-- /.container -->
     </div>
@@ -134,5 +139,21 @@
     <script src="js/export-wizard.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+	  
+	  
+     <!-- On Click event handlers   -->
+	      <script>
+      		$('#button_events').on('click', function(e){
+        		e.preventDefault();
+        		var address = '1.2tool-page.html';
+        		window.location = address;
+      		});
+      
+      
+    </script>
+	  
+	  
+	  
+	  
   </body>
 </html>
