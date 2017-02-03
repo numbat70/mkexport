@@ -114,8 +114,8 @@
 			    <!-- <p>You have asked us for:</p> -->
 				<script>
 		        	   if (localStorage.product) { document.write(localStorage.product);} 
-      			           if (localStorage.industry) { document.write(localStorage.industry);} 
-        			   if (localStorage.experience) { document.write(localStorage.experience);} 
+      			           if (localStorage.industry) { "<br>" + document.write(localStorage.industry);} 
+        			   if (localStorage.experience) { "<br>" +  document.write(localStorage.experience);} 
         			</script>
 				
 				<div id="q4"></div>
@@ -166,16 +166,16 @@
 		//lindustryOption7 Manufacturing
 		//lother Other
 		  
-		<!--  Aerospace  -->		  
-     		$('#lindustryOption1').on('click', function(e){
-			localStorage.setItem("industry", "I am interested in Aerospace, defence and marine");
-			document.getElementById("industry").innerHTML = localStorage.industry;
+	  
+     		$('#q4y').on('click', function(e){
+			localStorage.setItem("q4", "I am interested in Q4");
+			document.getElementById("q4").innerHTML = localStorage.q4;
       		});
 		  
-		<!--  Chemicals   -->
-		$('#lindustryOption2').on('click', function(e){
-			localStorage.setItem("industry", "I am interested in Chemical sciences");
-			document.getElementById("industry").innerHTML = localStorage.industry;
+
+		$('#q4n').on('click', function(e){
+			localStorage.setItem("q4", "I am not interested in q4");
+			document.getElementById("q4").innerHTML = localStorage.q4;
       		});
 
 		<!--  Creative  -->
