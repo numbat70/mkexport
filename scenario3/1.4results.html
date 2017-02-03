@@ -104,7 +104,31 @@
       </div>
 	      <div class="col-sm-3">
 		<div class="panel panel-default">
-			<div class="panel-heading">Messageing to support a stalled journey or relevant to main page content?</div>
+			 <div class="panel-heading"><h4>Here is what you have told us so far</h4></div>
+            			<ul class="list-group">
+		    		<li class="list-group-item">
+			    	<!-- <p>You have asked us for:</p> -->
+				<script>
+					if (localStorage.advice) { document.write(localStorage.advice);} 
+        				if (localStorage.networking) { document.write(localStorage.networking);} 
+        				if (localStorage.customers) { document.write(localStorage.customers);} 
+        				if (localStorage.skills) { document.write(localStorage.skills);} 
+        				if (localStorage.events) { document.write(localStorage.events);}  
+        				if (localStorage.funding) { document.write(localStorage.funding);} 
+					
+				       	
+        			</script>
+				
+				<script>
+				if (localStorage.domestic) { document.write("<br>" +localStorage.domestic);}
+				if (localStorage.product) { document.write("<br>" +localStorage.product);}
+				if (localStorage.industry) { document.write("<br>" +localStorage.industry);}
+				if (localStorage.experience) { document.write("<br>" +localStorage.experience);}
+				</script>
+
+				</li>
+		  		</ul>
+            </div>
 			<div class="panel-body">
 			    <p>We can help</p>
 			</div>
