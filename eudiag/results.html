@@ -105,19 +105,25 @@
 			 <div class="panel-heading"><h4>Here is what you have told us so far</h4></div>
 			<div class="panel-body">
 
-			<ul class="list-group">
-		    		<li class="list-group-item">
-			    	<!-- <p>You have asked us for:</p> -->
-		
+				<div id="product"></div>
+				<div id="industry"></div>
+				<div id="experience"></div>
 				
 				<script>
-				if (localStorage.product) { document.write("<br>" +localStorage.product);}
-				if (localStorage.industry) { document.write("<br>" +localStorage.industry);}
-				if (localStorage.experience) { document.write("<br>" +localStorage.experience);}
-				</script>
-
-				</li>
-				</ul>
+		        	   if (localStorage.product) {document.getElementById("product").innerHTML = localStorage.product;} 
+      			           if (localStorage.industry) {document.getElementById("industry").innerHTML = localStorage.industry;} 
+        			   if (localStorage.experience) {document.getElementById("experience").innerHTML = localStorage.experience;} 
+        			</script>
+				
+				<div id="q4"></div>
+				<div id="q5"></div>
+				<div id="q6"></div>
+				
+				<script>
+		        	   if (localStorage.q4) {document.getElementById("q4") = localStorage.q4;} 
+      			           if (localStorage.q5) {document.getElementById("q5").innerHTML = localStorage.q5;} 
+        			   if (localStorage.q6) {document.getElementById("q6").innerHTML = localStorage.q6;} 
+        			</script>
 				
             </div>
 		    </div>
