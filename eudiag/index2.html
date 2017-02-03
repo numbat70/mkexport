@@ -54,17 +54,6 @@
        <h1>If tell us some stuff then we can tailor our EU support for you.</h1>
        <p class="lead">Tell us more about your business. </p>
 	<section class="about-business">
-		<p><strong>I sell ...</strong></p>
-		<div class="btn-group" data-toggle="buttons">
-		    <label class="btn btn-default" id="loption1">
-		      <input type="radio" name="options" id="option1"> Products
-		    </label>
-		    <label class="btn btn-default" id="loption2">
-		      <input type="radio" name="options" id="option2"> Services
-		    </label>
-		  </div>
-	</section>
-	<section class="about-business">
   	      <p><strong>Question 4?</strong></p>
 		<div class="btn-group" data-toggle="buttons">
 		    <form>
@@ -77,7 +66,7 @@
 		   </form>
 		  </div>
 	 </section>
-	      
+	     
 
 	<section class="about-business">
   	      <p><strong>Question 5?</strong></p>
@@ -106,34 +95,8 @@
 		   </form>
 		  </div>
 	 </section>
-	      
-	      	<section class="about-business">
-  	      <p><strong>Question 7?</strong></p>
-		<div class="btn-group" data-toggle="buttons">
-		    <form>
-	            <label class="btn btn-default" id="q7y">
-		      <input type="radio" name="options" id="option1"> Yes
-		    </label>
-		    <label class="btn btn-default" id="q7n">
-		      <input type="radio" name="options" id="option2"> No
-		    </label>
-		   </form>
-		  </div>
-	 </section>
-	      
-	      	<section class="about-business">
-  	      <p><strong>Question 8?</strong></p>
-		<div class="btn-group" data-toggle="buttons">
-		    <form>
-	            <label class="btn btn-default" id="q8y">
-		      <input type="radio" name="options" id="option1"> Yes
-		    </label>
-		    <label class="btn btn-default" id="q8n">
-		      <input type="radio" name="options" id="option2"> No
-		    </label>
-		   </form>
-		  </div>
-	 </section>
+
+
 	      
 	      
        <div class="actions text-center">
@@ -150,21 +113,14 @@
 		    	<li class="list-group-item">
 			    <!-- <p>You have asked us for:</p> -->
 				<script>
-					//if (localStorage.advice) { document.write(localStorage.advice);} 
-        				//if (localStorage.networking) { document.write(localStorage.networking);} 
-        				//if (localStorage.customers) { document.write(localStorage.customers);} 
-        				//if (localStorage.skills) { document.write(localStorage.skills);} 
-        				//if (localStorage.events) { document.write(localStorage.events);}  
-        				//if (localStorage.funding) { document.write(localStorage.funding);} 
+		        	   if (localStorage.product) { document.write(localStorage.product);} 
+      			           if (localStorage.industry) { document.write(localStorage.industry);} 
+        			   if (localStorage.experience) { document.write(localStorage.experience);} 
         			</script>
 				
-				<script>
-				 	//if (localStorage.domestic) { document.write("<br>" +localStorage.domestic);}
-				</script>
-				
-				<div id="product"></div>
-				<div id="industry"></div>
-				<div id="experience"></div>
+				<div id="q4"></div>
+				<div id="q5"></div>
+				<div id="q6"></div>
 			</li>
 		  </ul>
             </div>
