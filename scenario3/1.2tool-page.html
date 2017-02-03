@@ -54,7 +54,7 @@
           <p ><strong>I'm looking for customers ...</strong></p>
             <div class="row" >
               <div class="col-xs-6 col-sm-3 col-sm-offset-3" id="clickuk">
-                <a href="1.3about-your-business.html" class="toggle-location">
+                <a href="1.3about-your-business.html" class="toggle-location" id="clickuk2">
                   <img src="images/united-kingdom.svg" alt="United Kingdom">
                 </a>
               </div>
@@ -109,6 +109,15 @@
 	 <script>
       		$('#clickuk').on('click', function(e){
         		e.preventDefault();
+			alert("clickuk")
+        		var address = '1.3about-your-business.html' ;
+			      localStorage.setItem("domestic", "I am looking for UK customers");
+        		window.location = address;
+      		});
+		 
+		$('#clickuk2').on('click', function(e){
+        		e.preventDefault();
+			alert("clickuk2")
         		var address = '1.3about-your-business.html' ;
 			      localStorage.setItem("domestic", "I am looking for UK customers");
         		window.location = address;
