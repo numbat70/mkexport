@@ -51,15 +51,15 @@
       <div class="starter-template text-center">
        <h1>Tell us more</h1>
          <p class="lead">Help us find the right customers for your business. </p>
-          <p><strong>I'm looking for customers ...</strong></p>
-            <div class="row">
-              <div class="col-xs-6 col-sm-3 col-sm-offset-3">
+          <p ><strong>I'm looking for customers ...</strong></p>
+            <div class="row" >
+              <div class="col-xs-6 col-sm-3 col-sm-offset-3" id="clickuk">
                 <a href="1.3about-your-business.html" class="toggle-location">
-                  <img src="images/united-kingdom.svg" alt="United Kingdom" onclick="window.location='1.3about-your-business.html; localStorage.domestic='I am interested in the UK''">
+                  <img src="images/united-kingdom.svg" alt="United Kingdom">
                 </a>
               </div>
-              <div class="col-xs-6 col-sm-3">
-                <a href="1.3about-your-business.html" class="toggle-location" onclick="window.location='1.3about-your-business.html;'">
+              <div class="col-xs-6 col-sm-3" id="clickworld">
+                <a href="1.3about-your-business.html" class="toggle-location" onclick="localStorage.domestic='I am looking for International customers';   window.location='1.3about-your-business.html;'">
                   <img src="images/worldwide.svg" alt="United Kingdom">
                 </a>
               </div>
@@ -103,5 +103,16 @@
     <script src="js/export-wizard.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- On Click event handlers   -->
+	      <script>
+      		$('#clickuk').on('click', function(e){
+        		e.preventDefault();
+        		var address = '1.3about-your-business.html';
+			      localStorage.setItem("domestic", "I am looking for UK customers");
+        		window.location = address;
+      		});
+         </script>
   </body>
 </html>
