@@ -179,8 +179,63 @@
       		});
 		
 	  </script>
+	  <script>
+		//lindustryOption1 Aerospace, defence and marine
+		//lindustryOption 2Chemical sciences
+		//lindustryOption3 Creative industries
+		//lindustryOption4 Financial services
+		//lindustryOption Food and drink
+		//lindustryOption 6Life sciences
+		//lindustryOption7 Manufacturing
+		//lother Other
+		  
+		<!--  Aerospace  -->		  
+     		$('#lindustryOption1').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Aerospace, defence and marine");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});
+		  
+		<!--  Chemicals   -->
+		$('#lindustryOption2').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Chemical sciences");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});
+
+		<!--  Creative  -->
+		$('#lindustryOption3').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Creative industries");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});
+	
+		<!--  Financial  -->
+		$('#lindustryOption4').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Financial services");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});
+		 
+		<!--  Food and Drink  -->
+		$('#lindustryOption5').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Food and Drink");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});		  
+		  
+		<!--  Life sciences  -->
+		$('#lindustryOption6').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Life sciences");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});		  
+		  
+		<!--  Manufacturing  -->
+		$('#lindustryOption7').on('click', function(e){
+			localStorage.setItem("industry", "I am interested in Manufacturing");
+			document.getElementById("industry").innerHTML = localStorage.industry;
+      		});		  
+		  
+			  
+		  
+	  </script>
 	  
-	      	<script>
+	  <script>
       		$('#lexpoption1').on('click', function(e){
 			localStorage.setItem("experience", "I have no export experience");
 			document.getElementById("experience").innerHTML = localStorage.experience;
