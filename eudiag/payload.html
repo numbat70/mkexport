@@ -264,7 +264,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     
-    <SCRIPT>
+    <SCRIPT>      
       document.getElementById("products").style.display = "none";
       document.getElementById("services").style.display = "none";
       
@@ -280,6 +280,10 @@
       document.getElementById("none").style.display = "none";
       document.getElementById("some").style.display = "none";
       document.getElementById("lots").style.display = "none";
+      
+      if (localStorage.products="I sell Products") {document.getElementById("products").style.display = "inline";}
+      if (localStorage.products="I sell Services") {document.getElementById("services").style.display = "inline";}
+      
     </SCRIPT>
     
   </body>
