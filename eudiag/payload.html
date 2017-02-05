@@ -61,86 +61,31 @@
             <p><a href="#" class="btn btn-success pull-right">Find out more</a></p>
           </div>
           -->
-          <div class="row">
-            <div class="col-xs-6 col-lg-4" id="products">
-              <h2>INFORMATION ON SELLING PRODUCTS</h2>
-              <p>Understand what is involved in selling products abroad...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-6 col-lg-4" id="services">
-              <h2>INFORMATION ON SELLING SERVICES</h2>
-              <p>Understand what is involved in selling products abroad...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-6 col-lg-4" id="aerospace">
-              <h2>AEROSPACE, DEFENCE AND MARINE</h2>
-              <p>Understand AEROSPACE...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-6 col-lg-4" id="chemical">
-              <h2>CHEMICAL SCIENCES</h2>
-              <p>Understand CHEMICAL...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-6 col-lg-4" id="creative">
-              <h2>CREATIVE INDUSTRIES</h2>
-              <p>Understand CREATIVE...</p>
+          <div class="row">          
+            <div class="col-xs-6 col-lg-4" id="q4">
+              <h2>INFORMATION TO HELP YOU WITH Q4</h2>
+              <p>Q4...</p>
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
           
-            <div class="col-xs-6 col-lg-4" id="financial">
-              <h2>FINANCIAL SERVICES</h2>
-              <p>Understand FINANCIAL...</p>
+            <div class="col-xs-6 col-lg-4" id="q5">
+              <h2>INFORMATION TO HELP YOU WITH Q5</h2>
+              <p>Q5...</p>
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
           
-            <div class="col-xs-6 col-lg-4" id="food">
-              <h2>FOOD AND DRINK</h2>
-              <p>Understand FOOD...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-            
-            <div class="col-xs-6 col-lg-4" id="life">
-              <h2>LIFE SCIENCES</h2>
-              <p>Understand LIFE SCIENCES...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-            
-            <div class="col-xs-6 col-lg-4" id="manufacturing">
-              <h2>MANUFACTURING</h2>
-              <p>Understand MANUFACTURING...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-          
-          <div class="col-xs-6 col-lg-4" id="other">
-              <h2>OTHER</h2>
-              <p>Understand OTHER...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-          
-            <div class="col-xs-6 col-lg-4" id="none">
-              <h2>NEW TO EXPORTING</h2>
-              <p>Understand NO EXPERIENCE...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-          
-            <div class="col-xs-6 col-lg-4" id="some">
-              <h2>INFORMATION TO HELP YOU EXPAND YOUR EXPORT KNOWLEDGE</h2>
-              <p>Understand SOME EXPERIENCE EXPORTING...</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/.col-xs-6.col-lg-4-->
-          
-            <div class="col-xs-6 col-lg-4" id="lots">
-              <h2>INFORMATION FOR EXPERIENCED EXPORTERS</h2>
-              <p>Understand EXPERIENCED...</p>
+            <div class="col-xs-6 col-lg-4" id="q6">
+              <h2>INFORMATION FOR HELP YOU WITH Q6</h2>
+              <p>Q6...</p>
               <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
         </div>   <!-- END OF ROW    -->      
 
+          
+          
+          <!-- END of Question 4, 5 and 6 -->
+          
+          
     <footer class="text-muted">
       <div class="container">
 
@@ -176,9 +121,11 @@
       document.getElementById("some").style.display = "none";
       document.getElementById("lots").style.display = "none";
       
+      //Products  or Services - show teh chosen one
       if (localStorage.products=="I sell Products") {document.getElementById("products").style.display = "inline";}
       if (localStorage.products=="I sell Services") {document.getElementById("services").style.display = "inline";}
       
+      //Industry - show the chosen industry
       if (localStorage.industry=="I am interested in Aerospace, defence and marine") {document.getElementById("aerospace").style.display = "inline";}
       if (localStorage.industry=="I am interested in Chemical sciences") {document.getElementById("chemical").style.display = "inline";}
  
@@ -189,14 +136,17 @@
       if (localStorage.industry=="I am interested in Manufacturing") {document.getElementById("manufacturing").style.display = "inline";}
       if (localStorage.industry=="I am interested in other industries") {document.getElementById("other").style.display = "inline";}
       
+      //Experience - show the relevant experience level content    
+      if (localStorage.experience=="I have no export experience") {document.getElementById("none").style.display = "inline";}
+      if (localStorage.experience=="I have some export experience") {document.getElementById("some").style.display = "inline";}
+      if (localStorage.experience=="I have lots of export experience") {document.getElementById("lots").style.display = "inline";}
       
       
- if (localStorage.experience=="I have no export experience") {document.getElementById("none").style.display = "inline";}
- if (localStorage.experience=="I have some export experience") {document.getElementById("some").style.display = "inline";}
- if (localStorage.experience=="I have lots of export experience") {document.getElementById("lots").style.display = "inline";}
-
-    
-        </SCRIPT>
+      //QUESTION 4, 5 AND 6    
+      if (localStorage.q4=="I am interested in Q4") {document.getElementById("q4").style.display = "inline";}
+      if (localStorage.q5=="I am interested in Q5") {document.getElementById("q5").style.display = "inline";}
+      if (localStorage.q6=="I am interested in Q6") {document.getElementById("q6").style.display = "inline";}
+     </SCRIPT>
     
   </body>
 </html>
