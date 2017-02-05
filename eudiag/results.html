@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>  
+  <head>      
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../favicon.ico"> 
 
     <title>Scottish Enterprise</title> 
 
@@ -52,26 +52,6 @@
        <h1>Thanks for this info </h1>
          <p class="lead">You have told us ... </p>
          <ul>
-	
-		<!-- What customer is looking for  -->
-		<li>
-	         <script>
-    		        if (localStorage.advice) { document.write(localStorage.advice);} 
-               		if (localStorage.networking) { document.write(localStorage.networking);} 
-       			if (localStorage.customers) { document.write(localStorage.customers);} 
-        		if (localStorage.skills) { document.write(localStorage.skills);} 
-        		if (localStorage.events) { document.write(localStorage.events);}  
-        		if (localStorage.funding) { document.write(localStorage.funding);}  
-         	</script>	
-		</li>
-		 
-		 <!-- domestic  -->
-		<li>
-	         <script>
-    		        if (localStorage.domestic) { document.write(localStorage.domestic);} 
-               	</script>	
-		</li>	
-		
 		<!-- Product or Service  -->
 		<li>
 	         <script>
@@ -91,13 +71,31 @@
     		        if (localStorage.experience) { document.write(localStorage.experience);} 
                	</script>	
 		</li>
+		 
+		 <li>
+	         <script>
+    		        if (localStorage.q4) { document.write(localStorage.q4);} 
+               	</script>	
+		</li>
+		 
+		 <li>
+	         <script>
+    		        if (localStorage.q5) { document.write(localStorage.q5);} 
+               	</script>	
+		</li>
+		 
+		<li>
+	         <script>
+    		        if (localStorage.q6) { document.write(localStorage.q6);} 
+               	</script>	
+		</li>
 	 
         </ul>
 	      <p><strong>Is this correct?</strong></p>
        <br/> <br/>
        <div class="actions text-center">
      <button id="secondary" onClick="parent.location='index.html'">No - let me change</button>
-    <button id="primary" onClick="parent.location='1.5hereswhatyoucandonow.html'">Yes - show me how Scottish Enterprise can help my business</button>
+    <button id="primary" onClick="parent.location='payload.html'">Yes - show me how Scottish Enterprise can help my business</button>
     </div>
 		      </div>
 	      
@@ -107,27 +105,25 @@
 			 <div class="panel-heading"><h4>Here is what you have told us so far</h4></div>
 			<div class="panel-body">
 
-			<ul class="list-group">
-		    		<li class="list-group-item">
-			    	<!-- <p>You have asked us for:</p> -->
-				<script>
-					if (localStorage.advice) { document.write(localStorage.advice);} 
-        				if (localStorage.networking) { document.write(localStorage.networking);} 
-        				if (localStorage.customers) { document.write(localStorage.customers);} 
-        				if (localStorage.skills) { document.write(localStorage.skills);} 
-        				if (localStorage.events) { document.write(localStorage.events);}  
-        				if (localStorage.funding) { document.write(localStorage.funding);} 
-        			</script>
+				<div id="product"></div>
+				<div id="industry"></div>
+				<div id="experience"></div>
 				
 				<script>
-				if (localStorage.domestic) { document.write("<br>" +localStorage.domestic);}
-				if (localStorage.product) { document.write("<br>" +localStorage.product);}
-				if (localStorage.industry) { document.write("<br>" +localStorage.industry);}
-				if (localStorage.experience) { document.write("<br>" +localStorage.experience);}
-				</script>
-
-				</li>
-				</ul>
+		        	   if (localStorage.product) {document.getElementById("product").innerHTML = localStorage.product;} 
+      			           if (localStorage.industry) {document.getElementById("industry").innerHTML = localStorage.industry;} 
+        			   if (localStorage.experience) {document.getElementById("experience").innerHTML = localStorage.experience;} 
+        			</script>
+				
+				<div id="q4"></div>
+				<div id="q5"></div>
+				<div id="q6"></div>
+				
+				<script>
+		        	   if (localStorage.q4) {document.getElementById("q4").innerHTML = localStorage.q4;} 
+      			           if (localStorage.q5) {document.getElementById("q5").innerHTML = localStorage.q5;} 
+        			   if (localStorage.q6) {document.getElementById("q6").innerHTML = localStorage.q6;} 
+        			</script>
 				
             </div>
 		    </div>
