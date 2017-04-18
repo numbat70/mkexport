@@ -1,13 +1,4 @@
-//$("#mktest").click(function() {
-    //alert("clicked"); 
-//    var a = $("#goodsvalue").val();
-//    var b = $("#handlingcost").val();   
-//    var sum = a + b;
-//    alert(sum); 
-//});
-
-
-$("#mktest").click(function() {
+$("#buttonCalc").click(function() {
 //EX WORKS
     var VOG=parseInt($("#VOG").val());
     var COH=parseInt($("#COH").val());
@@ -27,28 +18,26 @@ $("#mktest").click(function() {
     $("#CIF").val(CIF);
 
 
-
 	var COHA=parseInt($("#COHA").val());
+
 	var CDpercent=parseInt($("#CDpercent").val());
-    var CD=CDpercent * 500;
+    var CD=CDpercent * CIF;
+    CD=CD/100;
     $("#CD").val(CD);
 	
 	var ITpercent=parseInt($("#ITpercent").val());
-    var IT=ITpercent * 500;
+    var IT=ITpercent * CIF;
+    IT= IT/100;
     $("#IT").val(IT);
 
+	var ICust=parseInt($("#ICust").val());
+	var CCA=parseInt($("#CCA").val())
 
 //DDP
 	var DDP=CIF  + COHA + CD + IT + ICust + CCA
     $("#DDP").val(DDP);
 
- 	//var =parseInt($("#handlingcost").val());
-	//var =parseInt($("#handlingcost").val());
-
-
-
-    alert(FOB); 
-    ALERT(CIF);
+    
 });
 
 
