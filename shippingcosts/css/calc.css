@@ -12,3 +12,33 @@
       border: none;
 
 }
+
+.calcTots2{
+      background-color: #337ab7;
+      border-color: #337a99;
+      margin: 0;
+      width: 6em;
+      padding-left: 1px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: left;
+      cursor: none;
+      cursor: not-allowed;
+      border: none;
+
+}
+
+.mktest{
+      background-color: #337ab7;
+      border-color: #337a99;
+      margin: 0;
+      width: 6em;
+      padding-left: 1px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: left;
+      cursor: none;
+      cursor: not-allowed;
+      border: none;
+
+}
