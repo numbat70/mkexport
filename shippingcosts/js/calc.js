@@ -33,7 +33,7 @@ $("#buttonCalc").click(function() {
 	
 	var ITpercent=parseInt($("#ITpercent").val());
     var IT=ITpercent * CIF;
-    IT= IT/100;
+    IT= IT/100; 
     
 	//IT = parseInt(IT);
 	//IT = IT.toLocaleString();
