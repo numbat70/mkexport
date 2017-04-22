@@ -90,12 +90,21 @@ $("#i99").click(function(){    $(this).toggleClass('chosen ignore');   });
 $("#removeUnwanted").click(function(){  
 	$(".ignore").hide();
 	$("#removeUnwanted").hide();
+	$("#removeUnwanted2").hide();
+	$("#showAll").show();
+ });
+
+$("#removeUnwanted2").click(function(){  
+	$(".ignore").hide();
+	$("#removeUnwanted2").hide();
+	$("#removeUnwanted").hide();
 	$("#showAll").show();
  });
 
 $("#showAll").click(function(){  
 	$(".ignore").show();
 	$("#removeUnwanted").show();
+	$("#removeUnwanted2").show();
 	$("#showAll").hide();
  });
 
