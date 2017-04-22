@@ -1,15 +1,17 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-  <meta charset="utf-8"> 
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Scottish Enterprise :: Export Customer Journey</title> 
 
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/calc.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/calc.css" rel="stylesheet" media="screen">
+    <link href="css/calc.css" rel="stylesheet" media="print">
+    <!-- <link href="css/calc.css" rel="stylesheet" media="print"> -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,7 +24,7 @@
       <![endif]-->	
     </head>
     <body>
-      <h1>Export Customer Journies</h1>
+      <h1>Your Export Customer Journey</h1>
       
 
 
@@ -36,7 +38,7 @@
 
           <!--Gain Awareness -->
           <div class="col9 colCol colWhite" id="">               
-            <div class="colItemBold colBlue" id=""> Gain Awareness</div>
+            <div class="colItemBold colBlue clipChevron" id=""> Gain Awareness</div>
             <div class="colItem ignore" id="i11">I am actively looking
               for opportunities to
               help my business grow,
@@ -64,7 +66,7 @@
 
 
                       <div class="col9 colWhite" id="">    
-                        <div class="colItemBold colBlue" id="">Complete Research</div>
+                        <div class="colItemBold colBlue clipChevron" id="">Complete Research</div>
                         <div class="colItem ignore" id="i21">I am aware of the
                           public sector
                           support, how to
@@ -94,7 +96,7 @@
                                     </div>
 
                                     <div class="col9 colWhite" id="">  
-                                      <div class="colItemBold colGreen" id="">Contact Service Provider </div>
+                                      <div class="colItemBold colGreen clipChevron" id="">Contact Service Provider </div>
                                       <div class="colItem ignore" id="i31">   I contact you via my
                                         preferred channel
                                         and at a time that
@@ -126,7 +128,7 @@
 
                                                 </div>
                                                 <div class="col9 colWhite" id="">   
-                                                  <div class="colItemBold colGreen" id="">Evaluate Options</div>
+                                                  <div class="colItemBold colGreen clipChevron" id="">Evaluate Options</div>
                                                   <div class="colItem ignore" id="i41"> My options are clear,
                                                     simple and I can
                                                     prioritise what I
@@ -163,7 +165,7 @@
 
 
                                                             <div class="col9 colWhite" id="">   
-                                                              <div class="colItemBold colGreen" id="">Apply or Book</div>
+                                                              <div class="colItemBold colGreen clipChevron" id="">Apply or Book</div>
                                                               <div class="colItem ignore" id="i51">    I know which service/
                                                                 s are right for
                                                                 me now and in the
@@ -190,7 +192,7 @@
 
 
                                                                         <div class="col9 colWhite" id="">   
-                                                                          <div class="colItemBold colGreen" id="">Receive Service(s) </div>
+                                                                          <div class="colItemBold colGreen clipChevron" id="">Receive Service(s) </div>
                                                                           <div class="colItem ignore" id="i61">My skills, motivation
                                                                             and confidence are
                                                                             growing through
@@ -224,7 +226,7 @@
                                                                                     </div>
 
                                                                                     <div class="col9 colWhite" id="">  
-                                                                                      <div class="colItemBold colPurple" id="">Decide to export  </div>
+                                                                                      <div class="colItemBold colPurple clipChevron" id="">Decide to export  </div>
                                                                                       <div class="colItem ignore" id="i71">  I have access to tailored support and adviser advice when I need it & regardless of sector
                                                                                       </div>
                                                                                       <div class="colItem ignore" id="i72">  I am confident that I know what to do, by when and I have the skills to succeed in target markets
@@ -243,7 +245,7 @@
 
 
                                                                                     <div class="col9 colWhite" id="">  
-                                                                                      <div class="colItemBold colPurple" id="">Begin or Continue Exporting</div>
+                                                                                      <div class="colItemBold colPurple clipChevron" id="">Begin or Continue Exporting</div>
                                                                                       <div class="colItem ignore" id="i81">  My product/service is ready to export into my target market                  </div>
                                                                                       <div class="colItem ignore" id="i82"> I have developed my routes to market, including trusted contacts
                                                                                       </div>
@@ -265,7 +267,7 @@
 
 
                                                                                     <div class="col9 colWhite" id="">  
-                                                                                      <div class="colItemBold colPurple" id="">Next Steps </div>
+                                                                                      <div class="colItemBold colPurple clipChevron" id="">Next Steps </div>
                                                                                       <div class="colItem ignore" id="i91">  I am receiving tailored alerts about new opportunities relevant to my business
                                                                                       </div>
                                                                                       <div class="colItem ignore" id="i92"> I’m actively seeking, evaluating and developing new opportunities
@@ -285,8 +287,8 @@
 
       <br>
                       <!--Remove unwanted entries that have not been selected / highlighted-->                      
-                      <button type="button" class="btn btn-success" id="removeUnwanted">Hide unselected items</button>
-                      <button type="button" class="btn btn-primary" id="showAll" >Show all items</button>
+                      <button type="button" class="btn btn-success MKnoPrint" id="removeUnwanted">Hide unselected items</button>
+                      <button type="button" class="btn btn-primary MKnoPrint" id="showAll" >Show all items</button>
                       
                       <br>
                             <br>
