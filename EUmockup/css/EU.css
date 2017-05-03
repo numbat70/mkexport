@@ -4,6 +4,16 @@ input{
             border-radius: 5px ;
 }
 
+a:visited {
+    color: #4c2c92;
+}
+
+govuk-template-1875638….css:1
+a:link {
+    color: #005ea5;
+}
+
+
 .rowCalc{
       text-align: left;
       border-width: 1px;
@@ -125,22 +135,25 @@ input{
  }
 
  .logoDIT::after{
-      
-      content: url('../DIT.jpg');
+      padding: 0px;
+      margin: 0px;
+      /* content: url('../DIT.jpg'); */
       height:1em;
       width:1em;
       display:inline-block;
+      vertical-align: -30%;
+      clear: right;
  }
 
- .SEdoes {
+ .SEdoesNOT {
       color:green;
  }
 
- .SEshould  {
+ .SEshouldNOT  {
       color: #ff9900;
  }
 
- .partnerdoes {
+ .partnerdoesNOT {
       color: #ff0066;
  }
 
