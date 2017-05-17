@@ -1,13 +1,65 @@
 input{
       color: black; 
       font-weight: bold;
-            border-radius: 5px ;
+      border-radius: 5px ;
 }
 
 h2 {
 
       font-size: 1.5em;
 }
+
+h1{
+margin-bottom:0px;
+margin-top:0px;
+-webkit-margin-after:0px;
+-webkit-margin-before:0px;
+padding-left: 2rem;
+
+}
+
+.starter-template{
+padding-top: 0em;
+/*background-color: lightgrey;*/
+background-color:  #DADADA;
+
+
+}
+section.about-business {
+  background-color: white;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  border-bottom: none;
+  border-style: none;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  margin-top: 0.3em;
+}
+
+
+section.roundedWhite {
+  background-color: white;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  border-bottom: none;
+  border-style: none;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  margin-top: 0.3em;
+  border-radius: 0.5em;
+}
+
+
+.nomargin{
+      margin: 0px;
+      -webkit-margin-after:0px;
+}
+
+
 
 a:visited {
     color: #4c2c92;
@@ -17,6 +69,27 @@ govuk-template-1875638….css:1
 a:link {
     color: #005ea5;
 }
+
+.greyBack{
+      background-color: #DADADA;
+}
+
+
+/*
+.blueBack{
+      background-color: #2980b9;
+}
+*/
+
+.blueBack{
+      background-color: #DADADA;
+}
+
+.whiteBack{
+      background-color: white;
+}
+
+
 
 
 .rowCalc{
@@ -62,7 +135,7 @@ a:link {
       cursor: none;
       cursor: not-allowed;
       border: none;
-            border-radius: 5px ;
+      border-radius: 5px ;
 }
 
 .buttonDisplayOnlyWhite{
@@ -79,7 +152,7 @@ a:link {
       cursor: none;
       cursor: not-allowed;
       border: none;
-            border-radius: 5px ;
+      border-radius: 5px ;
 }
 
 .buttonDisplayOnlyWhiteGreen{
@@ -217,10 +290,6 @@ a:link {
   border: 5px solid green;
 }
 
-section.about-business {
-  padding: 0.5em 0;
-  border-bottom: 1px solid;
-}
 
 
 .btn-group .btn.active {
