@@ -1,3 +1,62 @@
+/* Nav Box's */
+a, a:link, a:visited, a:active, a:hover {text-decoration: none;!important;}
+
+.paddingLRzero{
+padding-left: 0em;
+padding-right: 0em;
+
+}
+
+
+.paddingTOPzero{
+padding-top: 0em;
+
+}
+
+.navbox {
+  position: relative;
+  display: block;
+  background: #DADADA;
+  border: 0px solid;
+  height: 5em;;
+  padding: 1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 0.5em;
+  color: #666;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.0em;
+  border-top-right-radius: 0.0em;
+  border-bottom-width: 1px;
+
+  border-right-width: 0em;
+
+}
+
+.navbox:hover,
+.navbox:active {
+    text-decoration: none;
+    border-right-width: 0px;
+    border-bottom-right-radius: 0em;
+    border-top-right-radius: 0em;
+    background: white;
+}
+
+.navboxselected{
+    text-decoration: none;
+    border-right-width: 0px;
+    border-bottom-right-radius: 0em;
+    border-top-right-radius: 0em;
+    background: white;
+    border-color: white;
+    font-weight: bold;
+}
+
+
+
+
+
 input{
       color: black; 
       font-weight: bold;
@@ -42,6 +101,7 @@ section.about-business {
 section.roundedWhite {
   background-color: white;
   padding: 0.5em 0;
+  padding-top: 0em;
   margin-bottom: 1em;
   border-bottom: none;
   border-style: none;
@@ -49,8 +109,14 @@ section.roundedWhite {
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  margin-top: 0.3em;
-  border-radius: 0.5em;
+  margin-top: 0em;
+  border-top-left-radius: 0.0em;
+  border-bottom-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  min-height: 31em;
+
+
 }
 
 
