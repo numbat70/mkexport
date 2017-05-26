@@ -131,6 +131,11 @@ a:visited {
     color: #4c2c92;
 }
 
+
+.btn,a:visited {
+    color: white;
+}
+
 govuk-template-1875638….css:1
 a:link {
     color: #005ea5;
