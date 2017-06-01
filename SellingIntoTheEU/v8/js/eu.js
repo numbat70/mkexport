@@ -36,6 +36,8 @@ $( ".btn-group button" ).click(function() {
   return false
 });
 
+
+
 $('#otherForm').hide();
 
   $('#other').click(function(){
@@ -52,33 +54,41 @@ $('#otherForm').hide();
   return false
 });
 
+
+
 $( ".step0nav" ).click(function() {
-  $('#sWhy' ).show().siblings().hide();
+  $('#sWhy' ).show().siblings(".roundedWhite").hide();
+  //$('#sFooter').show();
   return false
 });
 
 $( ".step1nav" ).click(function() {
-  $('#sMarket' ).show().siblings().hide();
+  $('#sMarket' ).show().siblings(".roundedWhite").hide();
+  //$('#sFooter').show();
   return false
 });
 
 $( ".step2nav" ).click(function() {
-  $('#sSkills' ).show().siblings().hide();
+  $('#sSkills' ).show().siblings(".roundedWhite").hide();
+  //$('#sFooter').show();
   return false
 });
 
 $( ".step3nav" ).click(function() {
-  $('#sChannels' ).show().siblings().hide();
+  $('#sChannels' ).show().siblings(".roundedWhite").hide();
+  //$('#sFooter').show();
   return false
 });
 
 $( ".step4nav" ).click(function() {
-  $('#sVisiting' ).show().siblings().hide();
+  $('#sVisiting' ).show().siblings(".roundedWhite").hide();
+  $('#sFooter').show();
   return false
 });
 
 $( ".step5nav" ).click(function() {
-  $('#sPractical' ).show().siblings().hide();
+  $('#sPractical' ).show().siblings(".roundedWhite").hide();
+  $('#sFooter').show();
   return false
 });
 

@@ -115,10 +115,17 @@ section.roundedWhite {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   min-height: 31em;
-
-
 }
 
+div.footerpics {
+  background-color: white;
+  padding: 0em;
+  padding-left: 0.7em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  min-height: 4em;
+}
 
 .nomargin{
       margin: 0px;
@@ -132,7 +139,7 @@ a:visited {
 }
 
 
-.btn,a:visited {
+.btn:visited {
     color: white;
 }
 
