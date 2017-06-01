@@ -46,11 +46,16 @@ $('#otherForm').hide();
   
   $('.industry').click(function(){
     $('#otherForm').hide();
-  });
+});
 
 
-  $( ".navbox" ).click(function() {
+$( ".navbox" ).click(function() {
   $( this ).addClass('navboxselected').siblings().removeClass('navboxselected');
+  return false
+});
+
+$( ".navboxlinks" ).click(function() {
+ // $( this ).addClass('navboxselected').siblings().removeClass('navboxselected');
   return false
 });
 
@@ -58,19 +63,16 @@ $('#otherForm').hide();
 
 $( ".step0nav" ).click(function() {
   $('#sWhy' ).show().siblings(".roundedWhite").hide();
-  //$('#sFooter').show();
   return false
 });
 
 $( ".step1nav" ).click(function() {
   $('#sMarket' ).show().siblings(".roundedWhite").hide();
-  //$('#sFooter').show();
   return false
 });
 
 $( ".step2nav" ).click(function() {
   $('#sSkills' ).show().siblings(".roundedWhite").hide();
-  //$('#sFooter').show();
   return false
 });
 
@@ -82,13 +84,44 @@ $( ".step3nav" ).click(function() {
 
 $( ".step4nav" ).click(function() {
   $('#sVisiting' ).show().siblings(".roundedWhite").hide();
-  $('#sFooter').show();
   return false
 });
 
 $( ".step5nav" ).click(function() {
   $('#sPractical' ).show().siblings(".roundedWhite").hide();
-  $('#sFooter').show();
+  return false
+});
+
+
+
+
+$( ".step1navlink" ).click(function() {
+   $('#step1nav' ).addClass('navboxselected').siblings().removeClass('navboxselected');
+     $('#sMarket' ).show().siblings(".roundedWhite").hide();
+  return false
+});
+
+$( ".step2navlink" ).click(function() {
+   $('#step2nav' ).addClass('navboxselected').siblings().removeClass('navboxselected');
+     $('#sSkills' ).show().siblings(".roundedWhite").hide();
+  return false
+});
+
+$( ".step3navlink" ).click(function() {
+   $('#step3nav' ).addClass('navboxselected').siblings().removeClass('navboxselected');
+     $('#sChannels' ).show().siblings(".roundedWhite").hide();
+  return false
+});
+
+$( ".step4navlink" ).click(function() {
+   $('#step4nav' ).addClass('navboxselected').siblings().removeClass('navboxselected');
+     $('#sVisiting' ).show().siblings(".roundedWhite").hide();
+  return false
+});
+
+$( ".step5navlink" ).click(function() {
+   $('#step5nav' ).addClass('navboxselected').siblings().removeClass('navboxselected');
+     $('#sPractical' ).show().siblings(".roundedWhite").hide();
   return false
 });
 
