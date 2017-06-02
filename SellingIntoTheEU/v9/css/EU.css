@@ -1,6 +1,27 @@
 /* Nav Box's */
 a, a:link, a:visited, a:active, a:hover {text-decoration: none !important;}
 
+.navboxselected a.navlink:link{
+	color: blue;
+	font-weight: bold;
+}
+
+a.navlink:hover{
+	color: greem;
+	font-weight: bold;
+}
+
+
+.navbox:hover a.navlink{
+
+	color: darkblue;
+}
+
+.navlink:link{
+	color: white ;
+	font-weight: bold;
+}
+
 .paddingLRzero{
 padding-left: 0em;
 padding-right: 0em;
@@ -10,13 +31,17 @@ padding-right: 0em;
 
 .paddingTOPzero{
 padding-top: 0em;
+}
+
+.marginTOPzero{
+margin-top: 0em;
 
 }
 
 .navbox {
   position: relative;
   display: block;
-  background: lightblue;
+  background: #00437f;
   border: 0px solid;
   height: 5em;;
   padding: 1em;
@@ -28,28 +53,33 @@ padding-top: 0em;
   border-bottom-right-radius: 0.0em;
   border-top-right-radius: 0.0em;
   border-bottom-width: 1px;
-  border-right-width: 0em;
+  border-right-width: 1px;
   color: white;
+  border-right-color: grey;
 }
 
 .navbox:hover,
 .navbox:active {
+	border-color: grey;
     text-decoration: none;
     border-right-width: 0px;
     border-bottom-right-radius: 0em;
     border-top-right-radius: 0em;
     background: white;
-    color: lightgrey;
+    color: blue;
 }
 
 .navboxselected{
     text-decoration: none;
+    border-color: grey;
+    border-width: 1px;
     border-right-width: 0px;
     border-bottom-right-radius: 0em;
     border-top-right-radius: 0em;
     background: white;
-    border-color: white;
+    color: green;
     font-weight: bold;
+
 }
 
 
@@ -101,9 +131,20 @@ section.roundedWhite {
   background-color: white;
   padding: 0.5em 0;
   padding-top: 0em;
+  margin-top: 0em;
   margin-bottom: 1em;
-  border-bottom: none;
   border-style: none;
+  border-color: grey;
+  border-top-width: 1px;
+  border-top-style: solid;
+
+  border-right-width: 1px;
+  border-right-style: solid;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
+
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
@@ -114,6 +155,7 @@ section.roundedWhite {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   min-height: 31em;
+
 }
 
 div.footerpics {
@@ -133,10 +175,11 @@ div.footerpics {
 
 
 
+/*
 a:visited {
     color: #4c2c92;
 }
-
+*/
 
 .btn:visited {
     color: white;
