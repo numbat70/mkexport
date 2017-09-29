@@ -9,6 +9,15 @@
       float: left;
 }
 
+.colux{
+      margin: 0px;
+      border-right-style: none;
+      width: 22%;
+      min-width:12em;
+      position: relative;
+      display: block;
+      float: left;
+}
 
 .fright{
     position: relative;
@@ -76,6 +85,16 @@ clip-path: polygon(95% 0, 99% 50%, 95% 100%, 0% 100%, 4% 50%, 0 0);
 
 .colPurple{
       background-color: DarkSlateBlue ;
+      margin: 0px;
+      border-right-style: none;
+      height: 6em;
+      color: white;
+      vertical-align: bottom; 
+      bottom: 0;
+}
+
+.colRed{
+      background-color: Red ;
       margin: 0px;
       border-right-style: none;
       height: 6em;
