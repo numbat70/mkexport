@@ -78,12 +78,11 @@ clip-path: polygon(95% 0, 99% 50%, 95% 100%, 0% 100%, 4% 50%, 0 0);
       background-color: #3399ff;
       margin: 0px;   
       border-right-style: none;
-      height: 6rem;
+      height: 6em;
       color: white;
       vertical-align: text-bottom; 
       
-      padding-top: 0.4em;
-      font-size: 1.8em;
+
 }
 
 .colPurple{
